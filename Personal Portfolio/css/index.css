@@ -1,0 +1,189 @@
+/* Reset margins and paddings for a clean slate */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically (if within a fixed height container) */
+    gap: 20px;
+}
+
+
+/* Left side content wrapper for name and subtitles */
+.header-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+/* Image adjustments - centered and with effects */
+.image {
+    width: 360px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: 90px; /* Moves the image slightly left from the right edge */
+    
+    border: 5px solid #ddd; /* Subtle border for a clean look */
+    padding: 5px; /* Adds space inside the border */
+    background-color: white; /* Ensures it blends well */
+}
+
+
+/* Image hover effect */
+.image:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+    max-width: 500px;
+    text-align: left;
+}
+
+.box {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+
+
+h3 {
+    font-size: 1.8rem;
+    color: #112840;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight {
+    color: #467db8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Content box styles */
+.mission-box, .box {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Box hover effect */
+.mission-box:hover, .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Button hover effect */
+.button:hover, .button2:hover {
+    transform: scale(1.1);
+}
+
+/* Button active effect */
+.button:active, .button2:active {
+    transform: scale(0.95);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Footer hover effect */
+footer:hover {
+    transform: scale(1.02);
+}

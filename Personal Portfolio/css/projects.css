@@ -1,0 +1,157 @@
+/* Reset margins and paddings for a clean slate */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically (if within a fixed height container) */
+    gap: 20px;
+}
+
+
+/* Left side content wrapper for name and subtitles */
+.header-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+
+.button:hover, .button2:hover {
+    transform: scale(1.1);
+}
+
+.button:active, .button2:active {
+    transform: scale(0.95);
+}
+
+/* Project Documents */
+section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+section ul {
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Project Gallery */
+.project-gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-caption {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+footer:hover {
+    transform: scale(1.02);
+}
