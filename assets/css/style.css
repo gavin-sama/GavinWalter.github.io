@@ -234,17 +234,19 @@ ul.side-nav.fixed li.logo {
   padding: 30px 30px 40px;
 }
 
-ul.side-nav.fixed li.logo a {
+ul.side-nav.fixed.li.logo a {
   font-weight: 200;
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+ul.table-of-contents li:not(.logo) a.active, 
+ul.table-of-contents li:not(.logo) a:hover {
   background-color: #fafafa;
   border-left: 3px solid;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span, 
+ul#slide-out li:not(.logo) a span {
   color: #333 !important;
 }
 
@@ -320,6 +322,8 @@ h3 {
   top: 0;
   width: 100%;
 }
+
+/* Buttons - Read Me, Contact Us */
 
 .waves-effect.waves-blue .waves-ripple {
   background-color: rgba(33, 150, 243, 0.2);
@@ -417,8 +421,6 @@ a.hoverline {
   border-bottom: 3px solid transparent !important;
   padding: 3px 3px 0 3px;
   transition: 0.25s all;
-  -moz-transition: 0.25s all;
-  -webkit-transition: 0.25s all;
 }
 
 a.hoverline:hover {
@@ -503,12 +505,15 @@ small {
   background-color: #008073 !important;
 }
 
+/* BREAKPOINT FIXES */
+/* Desktop large */
 @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
   }
 }
 
+/* Medium laptop adjustments */
 @media (max-width: 1360px) {
   .card ul li {
     font-size: 14px;
@@ -517,135 +522,43 @@ small {
   }
 }
 
-@media (max-width: 1160px) {
-  .card ul li {
-    line-height: 150%;
+/* Laptop fix: remove forced side gap */
+@media (max-width: 1200px) {
+  main {
+    padding-left: 0;
+  }
+  ul.side-nav {
+    width: 100%;
+    position: relative;
   }
 }
 
+/* Tablet */
 @media (max-width: 992px) {
   main {
-    padding-left: 0px;
-    padding-top: 64px;
-  }
-  ul.side-nav a {
-    line-height: 100%;
-    padding: 0;
-    width: 100%;
-  }
-  nav {
-    background: #fff;
-    height: 64px;
-    position: absolute;
-  }
-  nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
-    height: 56px;
-    line-height: 56px;
-  }
-  h3 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
-  .container {
-    margin: 0 auto;
-  }
-  nav.hide-on-large.only.trigger {
-    display: block;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-  }
-  .name-title {
-    display: block;
-    height: 100%;
-    padding-top: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-  }
-  .name-title>span, .name-title>a {
-    position: relative;
-    line-height: 20px;
-  }
-  .name-title a {
-    font-size: 22px;
-    display: block;
-  }
-  .name-title span {
-    display: block;
-    font-size: 14px;
-  }
-  h3, .container {
-    position: relative;
-    top: 64px;
-  }
-  section#intro {
-    margin-bottom: 0;
-    padding-bottom: 60px;
+    padding-left: 0;
   }
   .video-reflection {
     max-width: 95%;
     padding: 0 15px;
     margin-top: 30px;
-    margin-bottom: 50px;
-  }
-  .card .role {
-    position: relative;
-    right: initial;
-    top: initial;
+    margin-bottom: 30px;
   }
 }
 
+/* Phone */
 @media (max-width: 600px) {
-  h2 {
-    font-size: 22px;
-    line-height: 200%;
-    margin: 30px 0 0;
-  }
-  #intro.section .container *:not(span) {
-    padding: 0;
-  }
-  #intro.section {
-    padding-bottom: 40px;
+  main {
+    padding-left: 0 !important;
   }
   .video-reflection {
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0 10px;
     max-width: 100%;
   }
   .video-reflection h5 {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  .card .card-content .card-title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  #experience span.card-title {
-    text-align: center;
-    display: block;
-  }
-  #experience span.card-title a {
-    margin: 0;
-  }
-  i.mdi-navigation-close.right {
-    position: relative;
-    bottom: 15px;
-  }
-  #contact a:not(.btn-floating) {
-    text-align: center;
-    display: block;
-    left: initial;
-    bottom: initial;
-  }
-  #contact a.btn-floating.btn-large {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  #intro.section {
-    background-position-x: 30%;
   }
 }
