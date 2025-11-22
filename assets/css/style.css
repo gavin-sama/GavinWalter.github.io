@@ -110,13 +110,14 @@
 
 /* Video Reflection Section */
 .video-reflection {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   text-align: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
 }
 
 .video-container {
@@ -125,7 +126,8 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  margin-top: 15px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .video-container iframe {
@@ -283,6 +285,8 @@ h3 {
 #intro.section {
   background: #a7ffeb repeat;
   position: relative;
+  padding-bottom: 80px;
+  min-height: 100vh;
 }
 
 #intro.section .container {
@@ -291,6 +295,7 @@ h3 {
   left: 0;
   position: absolute;
   top: 0;
+  padding-bottom: 80px;
 }
 
 #intro.section .container *:not(span) {
@@ -576,11 +581,14 @@ small {
     top: 64px;
   }
   section#intro {
-    margin-bottom: -64px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
   }
   .video-reflection {
     max-width: 90%;
     padding: 0 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
   .card .role {
     position: relative;
@@ -598,9 +606,12 @@ small {
   #intro.section .container *:not(span) {
     padding: 0;
   }
+  #intro.section {
+    padding-bottom: 40px;
+  }
   .video-reflection {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0 10px;
   }
   .video-reflection h5 {
